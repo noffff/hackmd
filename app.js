@@ -551,7 +551,7 @@ app.post('/uploadimage', function (req, res) {
                   return
                 }
                 res.send({
-                  link: `https://s3-${config.s3.region}.amazonaws.com/${config.s3bucket}/${params.Key}`
+                  link: `https://s3.${config.s3.region}.amazonaws.com.cn/${config.s3bucket}/${params.Key}`
                 })
               })
             })
